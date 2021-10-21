@@ -1,0 +1,23 @@
+p{
+  border-style: dashed;
+  border-width: 5px;
+  border-color: blue
+}
+img{
+  border-style: dashed;
+  border-width: 5px;
+  border-color: blue
+}
+html{
+  background-color: lightblue
+}
+
+pre{
+  border-style: dashed;
+  border-width: 5px;
+  border-color: blue
+}
+#toyota{
+  height: 200px;
+  width: 300;
+}
