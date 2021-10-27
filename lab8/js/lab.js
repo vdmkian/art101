@@ -1,12 +1,20 @@
 /**
  * Author:    kain van der meer
- * Created:   10.20.21
- * for: art 101, lab 6
+ * Created:   10.20.27
+ * for: art 101, lab 8
  **/
- var myTransport = ["car","bus","walking","bike","run"];
+var numbers = [1,2,3,4,5,6,7,8,9];
 
- var myMainRide = {make: "toyota", model: "camry", color: "grey", year: "2003", age: 18, ownit: "true"};
+ function squared (x){
+   var results = x * x
+   return results;
+ }
 
- document.writeln("how I get from place to place: " + myTransport + <br>);
+ //tested
+ console.log("whats 1 squared?", squared(1));
+ console.log("whats 2 squared?", squared(2));
+ console.log("whats 12 squared?", squared(12));
 
- document.writeln("My Main Ride: <pre>", JSON.stringify(myMainRide, null, '\t'), "</pre>");
+ console.log("my numbers are:", numbers);
+ var result = numbers.map(squared);
+ console.log("my numbers squared are:", result);
