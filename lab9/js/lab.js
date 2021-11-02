@@ -1,12 +1,22 @@
 /**
  * Author:    kain van der meer
- * Created:   10.20.21
- * for: art 101, lab 6
+ * Created:   11.1.21
+ * for: art 101, lab 9
  **/
- var myTransport = ["car","bus","walking","bike","run"];
 
- var myMainRide = {make: "toyota", model: "camry", color: "grey", year: "2003", age: 18, ownit: "true"};
+//getting the output
+var outputEl = document.getElementById("output");
 
- document.writeln("how I get from place to place: " + myTransport + <br>);
+//aking new vars
+var new1El = document.createElement("p");
+new1El.innerHTML = "something new";
+var new2El = document.createElement("p");
+new2El.innerHTML = "something else";
 
- document.writeln("My Main Ride: <pre>", JSON.stringify(myMainRide, null, '\t'), "</pre>");
+//putting new vars in output
+outputEl.appendChild(new1El);
+outputEl.appendChild(new2El);
+
+//making it big and blue
+document.getElementById("output").style.color = "blue";
+document.getElementById("output").style.fontSize = "60px";
