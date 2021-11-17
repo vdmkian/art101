@@ -1,12 +1,26 @@
 /**
  * Author:    kain van der meer
- * Created:   10.20.21
- * for: art 101, lab 6
+ * Created:   11.3.21
+ * for: art 101, lab 10
  **/
- var myTransport = ["car","bus","walking","bike","run"];
 
- var myMainRide = {make: "toyota", model: "camry", color: "grey", year: "2003", age: 18, ownit: "true"};
+ function sortuser(word) {
+   var userName = word
+   console.log("username =", userName);
+   var nameArray = userName.split('');
+   console.log("nameArray =", nameArray);
+   var nameArraySort = nameArray.sort();
+   console.log("nameArraySort =", nameArraySort);
+   var nameSorted = nameArraySort.join('');
+   return nameSorted;
+ }
 
- document.writeln("how I get from place to place: " + myTransport + <br>);
-
- document.writeln("My Main Ride: <pre>", JSON.stringify(myMainRide, null, '\t'), "</pre>");
+ buttonEl = document.getElementById("my-button");
+ inputEl = document.getElementById("user-name");
+ outputEl = document.getElementById("output");
+ buttonEl.addEventListener("click", function(){
+   var user = inputEl.value;
+   var new1El = document.createElement("p");
+   new1El.innerHTML = sortuser(user);
+   outputEl.appendChild(new1El);
+ })
